@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(237, 217, 76, 0.5); /* #EDD94C with 0.5 transparency */
+  color: #333;
+}
+
+/* Welcome Section */
+.welcome {
+  width: 100%;
+  text-align: center;
+  padding: 60px;
+  background: #ff6347; /* Reverted to red background */
+  color: white;
+}
+
+.welcome h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.welcome p {
+  font-size: 1.2rem;
+}
+
+/* About Me Section */
+.about-me {
+  width: 100%;
+  background: #ffffff;
+  padding: 40px; /* Reduced padding to make sections closer */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-me p {
+  font-size: 1.2rem;
+  text-align: center;
+  max-width: 800px;
+}
+
+/* Projects Section */
+.projects {
+  width: 100%;
+  padding: 40px; /* Reduced padding */
+}
+
+.projects h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Project Layout */
+.project {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-left {
+  flex-direction: row;
+}
+
+.project-right {
+  flex-direction: row-reverse;
+}
+
+/* Hover Effect for Projects */
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Video and Image Styling */
+.project video, .project-image {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Project Descriptions */
+.project-description {
+  width: 50%;
+  padding: 0 20px;
+}
+
+.project-description h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.project-description p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+
+.footer a:hover {
+  color: #ff6347; /* On hover, the icon/link color changes */
+}
+
+.footer a i {
+  margin-right: 5px;
+}
+
+.footer span {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
