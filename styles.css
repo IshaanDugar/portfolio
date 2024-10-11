@@ -1,146 +1,165 @@
 /* General Styles */
 body {
-    font-family: 'Nunito', sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Fixes horizontal scrolling */
-    background-color: #ffea00; /* Lighter #EDD94C */
-    color: #333;
-    scroll-behavior: smooth; /* Smooth scrolling */
-  }
-  
-  /* Progress Bar */
-  #progress-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 4px;
-    background-color: #AC1D1B;
-    width: 0%;
-    z-index: 100;
-  }
-  
-  /* Welcome Section */
-  .welcome {
-    width: 100%;
-    text-align: center;
-    padding: 60px;
-    background: #2f2f2f;
-    color: white;
-  }
-  
-  .welcome h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 3rem;
-    margin-bottom: 10px;
-  }
-  
-  .welcome p {
-    font-size: 1.2rem;
-  }
-  
-  /* About Me Section */
-  .about-me {
-    width: 100%;
-    background: #F7FCFC;
-    padding: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .about-me p {
-    font-size: 1.2rem;
-    text-align: center;
-    max-width: 800px;
-  }
-  
-  /* Projects Section */
-  .projects {
-    width: 100%;
-    max-width: 1200px; /* Centering the content */
-    margin: 0 auto; /* Centering the section */
-    background-color: #ffea00cf; /* Lightened #EDD94C */
-    padding: 40px;
-    overflow: hidden; /* Prevents overflow of project sections */
-  }
-  
-  .projects h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  /* Project Layout */
-  .project {
-    display: flex;
-    align-items: center;
-    margin-bottom: 50px;
-    background: white;
-    padding: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden; /* Ensures content stays within bounds */
-  }
-  
-  /* Ensure descriptions do not overflow */
-  .project-description {
-    max-width: 50%; /* Limit description width */
-    overflow: hidden; /* Prevents overflow */
-  }
-  
-  /* Allow flexible layout adjustments on hover */
-  .project:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
-  }
-  
-  /* Video and Image Styling */
-  
-  .project video, .project-image {
-    width: 50%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  /* Project Descriptions */
-  .project-description {
-    padding: 0 20px;
-  }
-  
-  .project-description h3 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-  }
-  
-  .project-description p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #555;
-  }
-  
-  /* Footer */
-  .footer {
-    background-color: #222222;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .footer a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  
-  .footer a:hover {
-    text-decoration: underline;
-  }
-  
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Fixes horizontal scrolling */
+  background-color: #ffea00; /* Lighter #EDD94C */
+  color: #333;
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+/* Progress Bar */
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background-color: #AC1D1B;
+  width: 0%;
+  z-index: 100;
+}
+
+/* Welcome Section */
+.welcome {
+  width: 100%;
+  text-align: center;
+  padding: 60px;
+  background: #2f2f2f;
+  color: white;
+}
+
+.welcome h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.welcome p {
+  font-size: 1.2rem;
+}
+
+/* About Me Section */
+.about-me {
+  width: 100%;
+  background: #F7FCFC;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-me p {
+  font-size: 1.2rem;
+  text-align: center;
+  max-width: 800px;
+}
+
+/* Projects Section */
+.projects {
+  width: 100%;
+  max-width: 1200px; /* Centering the content */
+  margin: 0 auto; /* Centering the section */
+  background-color: #ffea00cf; /* Lightened #EDD94C */
+  padding: 40px;
+  overflow: hidden; /* Prevents overflow of project sections */
+}
+
+.projects h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Project Layout */
+.project {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden; /* Ensures content stays within bounds */
+}
+
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Project Descriptions */
+.project-description {
+  padding: 0 20px;
+  max-width: 50%; /* Limit description width */
+  overflow: hidden; /* Prevents overflow */
+}
+
+.project-description h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.project-description p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.video-container {
+  width: 100%; /* Container takes full width of the parent */
+  height: 250px; /* Set a fixed height to control the video size */
+  max-width: 600px; /* Limit the max width to prevent excessive scaling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Center the container */
+  overflow: hidden; /* Ensure the video doesn't overflow */
+  box-sizing: border-box; /* Proper padding/border handling */
+}
+
+.project video, .project-image, .video-container iframe {
+  width: 100%; /* Ensure the video fills the container width */
+  height: 100%; /* Ensure the video fills the container height */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 10px; /* Retain rounded corners */
+}
+
+/* Ensure no overflow occurs */
+.project-right .video-container {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.project-image {
+  width: auto; /* Maintain aspect ratio */
+  height: 300px; /* Set a fixed height */
+  max-width: 100%; /* Ensure it does not exceed the container's width */
+  object-fit: cover; /* Cover the container without distortion */
+  border-radius: 10px; /* Add any border radius if needed */
+}
+
+/* Footer */
+.footer {
+  background-color: #222222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
