@@ -99,6 +99,7 @@ body {
   }
   
   /* Video and Image Styling */
+  
   .project video, .project-image {
     width: 50%;
     height: auto;
