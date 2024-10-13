@@ -1,15 +1,13 @@
-/* General Styles */
 body {
   font-family: 'Nunito', sans-serif;
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Fixes horizontal scrolling */
-  background-color: #ffea00; /* Lighter #EDD94C */
+  overflow-x: hidden;
+  background-color: #ffea00;
   color: #333;
-  scroll-behavior: smooth; /* Smooth scrolling */
+  scroll-behavior: smooth;
 }
 
-/* Progress Bar */
 #progress-bar {
   position: fixed;
   top: 0;
@@ -20,18 +18,43 @@ body {
   z-index: 100;
 }
 
-/* Welcome Section */
+/*
+.title {
+  font-size: 3rem;
+  font-family: 'cursive', sans-serif;
+  margin-bottom: 10px;
+  position: relative;
+  top: 50%;
+  transform: perspective(500px) translateZ(0);
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: perspective(500px) translateZ(0);
+  }
+  50% {
+    transform: perspective(500px) translateZ(-20px);
+  }
+  100% {
+    transform: perspective(500px) translateZ(0);
+  }
+}
+
+*/
+
 .welcome {
   width: 100%;
   text-align: center;
   padding: 60px;
   background: #2f2f2f;
   color: white;
+  overflow: hidden;
 }
 
 .welcome h1 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 3rem;
+  font-family: "Londrina Sketch", sans-serif;
+  font-size: 4rem;
   margin-bottom: 10px;
 }
 
@@ -39,7 +62,6 @@ body {
   font-size: 1.2rem;
 }
 
-/* About Me Section */
 .about-me {
   width: 100%;
   background: #F7FCFC;
@@ -56,14 +78,14 @@ body {
   max-width: 800px;
 }
 
-/* Projects Section */
+
 .projects {
   width: 100%;
-  max-width: 1200px; /* Centering the content */
-  margin: 0 auto; /* Centering the section */
-  background-color: #ffea00cf; /* Lightened #EDD94C */
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffea00cf;
   padding: 40px;
-  overflow: hidden; /* Prevents overflow of project sections */
+  overflow: hidden;
 }
 
 .projects h2 {
@@ -73,7 +95,6 @@ body {
   margin-bottom: 40px;
 }
 
-/* Project Layout */
 .project {
   display: flex;
   align-items: center;
@@ -83,7 +104,7 @@ body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden; /* Ensures content stays within bounds */
+  overflow: hidden;
 }
 
 .project:hover {
@@ -91,11 +112,10 @@ body {
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Project Descriptions */
 .project-description {
   padding: 0 20px;
-  max-width: 50%; /* Limit description width */
-  overflow: hidden; /* Prevents overflow */
+  max-width: 50%;
+  overflow: hidden;
 }
 
 .project-description h3 {
@@ -111,39 +131,37 @@ body {
 }
 
 .video-container {
-  width: 100%; /* Container takes full width of the parent */
-  height: 250px; /* Set a fixed height to control the video size */
-  max-width: 600px; /* Limit the max width to prevent excessive scaling */
+  width: 100%;
+  height: 250px;
+  max-width: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto; /* Center the container */
-  overflow: hidden; /* Ensure the video doesn't overflow */
-  box-sizing: border-box; /* Proper padding/border handling */
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .project video, .project-image, .video-container iframe {
-  width: 100%; /* Ensure the video fills the container width */
-  height: 100%; /* Ensure the video fills the container height */
-  object-fit: cover; /* Maintain aspect ratio */
-  border-radius: 10px; /* Retain rounded corners */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-/* Ensure no overflow occurs */
 .project-right .video-container {
   max-width: 100%;
   overflow: hidden;
 }
 
 .project-image {
-  width: auto; /* Maintain aspect ratio */
-  height: 300px; /* Set a fixed height */
-  max-width: 100%; /* Ensure it does not exceed the container's width */
-  object-fit: cover; /* Cover the container without distortion */
-  border-radius: 10px; /* Add any border radius if needed */
+  width: auto;
+  height: 300px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-/* Footer */
 .footer {
   background-color: #222222;
   color: white;
