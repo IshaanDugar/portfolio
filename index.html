@@ -3,92 +3,265 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Ishaan Dugar | Portfolio</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-
   <div id="progress-bar"></div>
+  
+  <nav class="navbar">
+    <div class="nav-logo">ID</div>
+    <ul class="nav-links">
+      <li><a href="#hero" onclick="scrollToSection('hero')">Home</a></li>
+      <li><a href="#about" onclick="scrollToSection('about')">About</a></li>
+      <li><a href="#projects" onclick="scrollToSection('projects')">Projects</a></li>
+      <li><a href="#contact" onclick="scrollToSection('contact')">Contact</a></li>
+    </ul>
+    <div class="hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </nav>
 
-  <div class="welcome">
-    <h1>Ishaan's Portfolio</h1>
-    <p>Explore my projects and get to know more about me!</p>
-  </div>
-
-  <section class="about-me">
-    <h2>About Me</h2>
-    <p>I'm an aspiring engineer passionate about electronics, automation, and software development. From crafting automation systems to building my own 8-bit computer, I'm constantly exploring new projects. My hands-on experience has given me the ability to apply innovative solutions to real-world problems.</p>
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1>Ishaan Dugar</h1>
+      <div class="typewriter">
+        <span id="typed-text"></span><span class="cursor"></span>
+      </div>
+      <p class="hero-subtitle">Engineer, Developer, Innovator</p>
+      <a href="#projects" class="cta-button" onclick="scrollToSection('projects')">View My Work</a>
+    </div>
+    <div class="shapes">
+      <div class="shape shape1"></div>
+      <div class="shape shape2"></div>
+      <div class="shape shape3"></div>
+    </div>
   </section>
 
-  <section class="projects">
-    <h2>Projects</h2>
+  <section id="about" class="about-me">
+    <div class="container" data-aos="fade-up">
+      <h2 class="section-title">About Me</h2>
+      <div class="underline"></div>
+      <p>I'm an aspiring engineer passionate about electronics, automation, and software development. From crafting automation systems to building my own 8-bit computer, I'm constantly exploring new projects. My hands-on experience has given me the ability to apply innovative solutions to real-world problems.</p>
+    </div>
+  </section>
 
-    <div class="project project-left">
-      <div class="video-container">
-        <iframe src="https://drive.google.com/file/d/1ew-JkiqGT9whi-f0WHS-P225aEVubmV2/preview" 
-                width="100%" height="auto" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Projects</h2>
+      <div class="underline" data-aos="fade-up" data-aos-delay="100"></div>
+      
+      <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-img">
+          <div class="video-container">
+            <iframe src="https://drive.google.com/file/d/1ew-JkiqGT9whi-f0WHS-P225aEVubmV2/preview" 
+                  width="100%" height="auto" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-header">
+            <h3>Zoom Login Bot</h3>
+            <span class="year-badge">2020</span>
+          </div>
+          <p>A Python-based automation bot designed to log into Zoom classes based on a predefined schedule. This project was aimed at optimizing time management during the pandemic.</p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Automation</span>
+          </div>
+        </div>
       </div>
-      <div class="project-description">
-        <h3>Zoom Login Bot</h3>
-        <p>A Python-based automation bot designed to log into Zoom classes based on a predefined schedule. This project was aimed at optimizing time management during the pandemic.</p>
-      </div>
-    </div>
 
-    <div class="project project-right">
-      <div class="project-description">
-        <h3>Room Automation</h3>
-        <p>Automated room utilities using the ESP8266 chip, along with real-time control through a mobile app built with React-Native. A significant project for smart home enthusiasts.</p>
+      <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="project-img">
+          <div class="video-container">
+            <iframe src="https://drive.google.com/file/d/1bqbw1jRuGHf2RkKQaL6tDjHZAy7mDv3p/preview" 
+                  width="100%" height="auto" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-header">
+            <h3>Room Automation</h3>
+            <span class="year-badge">2021</span>
+          </div>
+          <p>Automated room utilities using the ESP8266 chip, along with real-time control through a mobile app built with React-Native. A significant project for smart home enthusiasts.</p>
+          <div class="project-tags">
+            <span>IoT</span>
+            <span>React Native</span>
+            <span>ESP8266</span>
+          </div>
+        </div>
       </div>
-      <div class="video-container">
-        <iframe src="https://drive.google.com/file/d/1bqbw1jRuGHf2RkKQaL6tDjHZAy7mDv3p/preview" 
-                width="100%" height="auto" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+      
+      <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="project-img">
+          <div class="video-container">
+            <iframe src="https://drive.google.com/file/d/1P3k7ERKAHXVFHh96hcQzgToB-VUbV_Iz/preview" 
+                  width="100%" height="auto" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-header">
+            <h3>Computerized Door Lock</h3>
+            <span class="year-badge">2021</span>
+          </div>
+          <p>Developed a motorized door lock system, featuring RFID and smartphone-controlled unlocking mechanisms for enhanced security. This project focused on safety and automation.</p>
+          <div class="project-tags">
+            <span>RFID</span>
+            <span>Security</span>
+            <span>Embedded</span>
+          </div>
+        </div>
       </div>
-    </div>
-    
-  <div class="project project-left">
-    <div class="video-container">
-      <iframe src="https://drive.google.com/file/d/1P3k7ERKAHXVFHh96hcQzgToB-VUbV_Iz/preview" 
-              width="100%" height="auto" frameborder="0" allow="autoplay" allowfullscreen></iframe>
-    </div>
-    <div class="project-description">
-      <h3>Computerized Door Lock</h3>
-      <p>Developed a motorized door lock system, featuring RFID and smartphone-controlled unlocking mechanisms for enhanced security. This project focused on safety and automation.</p>
-    </div>
-  </div>
 
-    <div class="project project-right">
-      <div class="project-description">
-        <h3>Automated Plant Watering System</h3>
-        <p>An IoT-based solution that regulates irrigation based on soil moisture, humidity, and temperature. It uses an ESP8266 chip for automation and ensures efficient water usage.</p>
+      <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="project-img">
+          <div class="video-container">
+            <iframe src="https://drive.google.com/file/d/1Q5KjtlpX0ZWbVR7fgKD7JkFcQ73d5SfH/preview" 
+                  width="100%" height="auto" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-header">
+            <h3>Automated Plant Watering System</h3>
+            <span class="year-badge">2021</span>
+          </div>
+          <p>An IoT-based solution that regulates irrigation based on soil moisture, humidity, and temperature. It uses an ESP8266 chip for automation and ensures efficient water usage.</p>
+          <div class="project-tags">
+            <span>IoT</span>
+            <span>Sensors</span>
+            <span>Automation</span>
+          </div>
+        </div>
       </div>
-      <div class="video-container">
-        <iframe src="https://drive.google.com/file/d/1Q5KjtlpX0ZWbVR7fgKD7JkFcQ73d5SfH/preview" 
-                width="100%" height="auto" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+
+      <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="project-img">
+          <img src="8Bit.jpeg" alt="8-bit breadboard computer" class="project-image">
+        </div>
+        <div class="project-info">
+          <div class="project-header">
+            <h3>8-bit Breadboard Computer</h3>
+            <span class="year-badge">2022</span>
+          </div>
+          <p>Building an 8-bit computer from scratch using a breadboard, learning the basics of computer architecture and digital logic. This project deepened my understanding of low-level hardware systems. Given the complexity, the project is still not 100% complete due to a few components requiring rebuilding, but is still able to do a few tasks.</p>
+          <div class="project-tags">
+            <span>Digital Logic</span>
+            <span>Hardware</span>
+            <span>Computer Architecture</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="project-img">
+          <div class="video-container">
+            <iframe src="https://drive.google.com/file/d/15q3Sf9Nci12J8tetjMShI0hKSpTQaXtN/preview" 
+                  width="100%" height="auto" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-header">
+            <h3>Lane Detection System</h3>
+            <span class="year-badge">2023</span>
+          </div>
+          <p>Inspired by Tesla's autopilot system during a trip to the USA, I developed a real-time lane detection system using OpenCV and Python. The project applies computer vision techniques like lane isolation, perspective transform, binary image transform, and line fitting to identify road lanes under varying conditions. I've also implemented curvature calculation and center-of-road line adjustment. Currently working on integrating vehicle detection and relative speed calculations to further enhance its capabilities.</p>
+          <div class="project-tags">
+            <span>OpenCV</span>
+            <span>Python</span>
+            <span>Computer Vision</span>
+            <span>Autonomous Driving</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="project-img">
+          <div class="video-container">
+            <iframe src="https://drive.google.com/file/d/1hkG21JqxxecD13tEqcTQonjuohHLji5X/preview" 
+                  width="100%" height="auto" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-header">
+            <h3>FPGA Rhythm Game</h3>
+            <span class="year-badge">2024</span>
+          </div>
+          <p>As part of my EE2026 Digital Design course, our team built a rhythm game using a Basys3 FPGA board with PMOD OLED, DA2, and AMP2 modules. I handled the audio system, applying my musical background to generate sound from clock cycles. By mapping guitar notes to specific frequencies and durations, I created a system for playing 5 different songs with volume control. My teammate and I took lead responsibility for integrating all components into a cohesive game that synchronizes audio with on-screen visuals, all built within a tight two-week timeframe.</p>
+          <div class="project-tags">
+            <span>Verilog</span>
+            <span>FPGA</span>
+            <span>Digital Design</span>
+            <span>Audio Processing</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="project-img">
+          <div class="video-container">
+            <iframe src="https://drive.google.com/file/d/1M7_z14CYBo13OmL4IsAPvXjtjuCN_5e6/preview" 
+                  width="100%" height="auto" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-header">
+            <h3>Augmented Reality Video Player</h3>
+            <span class="year-badge">2024</span>
+          </div>
+          <p>Fascinated by AR headsets but deterred by their high cost, I created my own AR video player using computer vision techniques. Starting with hand tracking and object tracking, I built a system that allows me to move digital objects with hand gestures. I then developed it into a video player with a custom GUI that can be resized and repositioned in space. I implemented a clever mode-switching system to distinguish between resizing and moving gestures, solving a key usability challenge. The final product closely mimics the interactive experience of commercial AR headsets.</p>
+          <div class="project-tags">
+            <span>Computer Vision</span>
+            <span>Python</span>
+            <span>Augmented Reality</span>
+            <span>Hand Tracking</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="project-img">
+          <img src="financer-app.jpg" alt="Financial Tracker App" class="project-image">
+        </div>
+        <div class="project-info">
+          <div class="project-header">
+            <h3>Financial Tracker App</h3>
+            <span class="year-badge">2025</span>
+          </div>
+          <p>Financer is my personal expense tracker designed to keep your finances in check with ease. With a sleek dark theme and grid layout for quick expense entries, it allows you to log spending across various categories. Visual progress bars show your budget usage—toggling seamlessly between weekly and monthly views—while color-coded alerts keep you informed. The app allows you to view complete transaction history and export your data as an Excel file for deeper analysis.</p>
+          <div class="project-tags">
+            <span>Mobile App</span>
+            <span>Finance</span>
+            <span>UI/UX</span>
+          </div>
+        </div>
       </div>
     </div>
+  </section>
 
-    <div class="project project-left">
-      <img src="8Bit.jpeg" alt="8-bit breadboard computer" class="project-image">
-      <div class="project-description">
-        <h3>8-bit Breadboard Computer</h3>
-        <p>Building an 8-bit computer from scratch using a breadboard, learning the basics of computer architecture and digital logic. This project deepened my understanding of low-level hardware systems. Given the complexity, the project is still not 100% complete due to a few components requiring rebuilding, but is still able to do a few tasks.</p>
+  <section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="underline"></div>
+      <p class="contact-text">Let's connect!</p>
+      <p class="email-display">ishaandugar@u.nus.edu</p>
+      <a href="mailto:ishaandugar@u.nus.edu" class="cta-button">Send Email</a>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/ishaan-dugar/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
       </div>
     </div>
   </section>
 
   <footer class="footer">
-    <a href="https://www.linkedin.com/in/ishaan-dugar/" target="_blank">
-      <i class="fab fa-linkedin"></i> LinkedIn
-    </a>
-    <span> | </span>
-    <a href="mailto:ishaandugar@u.nus.edu">ishaandugar@u.nus.edu</a>
+    <p>Designed & Built by Ishaan Dugar © 2023</p>
   </footer>
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
